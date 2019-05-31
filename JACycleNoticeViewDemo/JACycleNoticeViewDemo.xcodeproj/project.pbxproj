@@ -13,6 +13,10 @@
 		09C5594222A1073C006DF650 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09C5594122A1073C006DF650 /* Assets.xcassets */; };
 		09C5594522A1073C006DF650 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09C5594322A1073C006DF650 /* LaunchScreen.storyboard */; };
 		09C5594822A1073C006DF650 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C5594722A1073C006DF650 /* main.m */; };
+		09C5595222A107FB006DF650 /* JACycleNoticeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C5595022A107FB006DF650 /* JACycleNoticeView.m */; };
+		09C5595522A108A9006DF650 /* JAUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 09C5595422A108A9006DF650 /* JAUtilities.m */; };
+		09C5595922A10BAC006DF650 /* notice@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09C5595722A10BAC006DF650 /* notice@2x.png */; };
+		09C5595A22A10BAC006DF650 /* notice@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 09C5595822A10BAC006DF650 /* notice@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		09C5594422A1073C006DF650 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		09C5594622A1073C006DF650 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09C5594722A1073C006DF650 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		09C5595022A107FB006DF650 /* JACycleNoticeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JACycleNoticeView.m; sourceTree = "<group>"; };
+		09C5595122A107FB006DF650 /* JACycleNoticeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JACycleNoticeView.h; sourceTree = "<group>"; };
+		09C5595322A108A9006DF650 /* JAUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAUtilities.h; sourceTree = "<group>"; };
+		09C5595422A108A9006DF650 /* JAUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAUtilities.m; sourceTree = "<group>"; };
+		09C5595722A10BAC006DF650 /* notice@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notice@2x.png"; sourceTree = "<group>"; };
+		09C5595822A10BAC006DF650 /* notice@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "notice@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +68,13 @@
 		09C5593722A1073B006DF650 /* JACycleNoticeViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				09C5594E22A107FB006DF650 /* SupportingFiles */,
 				09C5593822A1073B006DF650 /* AppDelegate.h */,
 				09C5593922A1073B006DF650 /* AppDelegate.m */,
 				09C5593B22A1073B006DF650 /* ViewController.h */,
 				09C5593C22A1073B006DF650 /* ViewController.m */,
+				09C5595322A108A9006DF650 /* JAUtilities.h */,
+				09C5595422A108A9006DF650 /* JAUtilities.m */,
 				09C5593E22A1073B006DF650 /* Main.storyboard */,
 				09C5594122A1073C006DF650 /* Assets.xcassets */,
 				09C5594322A1073C006DF650 /* LaunchScreen.storyboard */,
@@ -69,6 +82,33 @@
 				09C5594722A1073C006DF650 /* main.m */,
 			);
 			path = JACycleNoticeViewDemo;
+			sourceTree = "<group>";
+		};
+		09C5594E22A107FB006DF650 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				09C5595622A10BAC006DF650 /* Resource */,
+				09C5594F22A107FB006DF650 /* JACycleNoticeView */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		09C5594F22A107FB006DF650 /* JACycleNoticeView */ = {
+			isa = PBXGroup;
+			children = (
+				09C5595122A107FB006DF650 /* JACycleNoticeView.h */,
+				09C5595022A107FB006DF650 /* JACycleNoticeView.m */,
+			);
+			path = JACycleNoticeView;
+			sourceTree = "<group>";
+		};
+		09C5595622A10BAC006DF650 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				09C5595722A10BAC006DF650 /* notice@2x.png */,
+				09C5595822A10BAC006DF650 /* notice@3x.png */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +168,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09C5595922A10BAC006DF650 /* notice@2x.png in Resources */,
 				09C5594522A1073C006DF650 /* LaunchScreen.storyboard in Resources */,
 				09C5594222A1073C006DF650 /* Assets.xcassets in Resources */,
+				09C5595A22A10BAC006DF650 /* notice@3x.png in Resources */,
 				09C5594022A1073B006DF650 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,8 +183,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09C5595222A107FB006DF650 /* JACycleNoticeView.m in Sources */,
 				09C5593D22A1073B006DF650 /* ViewController.m in Sources */,
 				09C5594822A1073C006DF650 /* main.m in Sources */,
+				09C5595522A108A9006DF650 /* JAUtilities.m in Sources */,
 				09C5593A22A1073B006DF650 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
