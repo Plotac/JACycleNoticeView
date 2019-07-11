@@ -20,7 +20,7 @@
 
 @implementation JACycleNoticeView
 
-- (instancetype)initWithFrame:(CGRect)frame noticeItems:(NSArray<NSString*> *)items delegate:(id<JACycleNoticeViewDelegete>)delegate {
+- (instancetype)initWithFrame:(CGRect)frame noticeItems:(NSArray<JACycleNoticeItem*> *)items delegate:(id<JACycleNoticeViewDelegete>)delegate {
     self = [super initWithFrame:frame];
     if (self) {
         

@@ -45,16 +45,24 @@
         [noticeItems addObject:item];
     }
     
-    self.noticeView = [[JACycleNoticeView alloc]initWithFrame:CGRectMake(0, 200, [UIScreen mainScreen].bounds.size.width, 35) noticeItems:nil delegate:self];
-    self.noticeView.noticeItems = noticeItems;
+    self.noticeView = [[JACycleNoticeView alloc]initWithFrame:CGRectMake(0, 200, [UIScreen mainScreen].bounds.size.width, 35) noticeItems:noticeItems delegate:self];
+//    self.noticeView.noticeItems = noticeItems;
     self.noticeView.cycleScrollEnabled = YES;
     [self.view addSubview:self.noticeView];
     
 }
 
+#pragma mark - JACycleNoticeViewDelegete
 - (void)ja_noticeView:(JACycleNoticeView *)noticeView didSelectedItemAtIndex:(NSInteger)index {
     JACycleNoticeItem *item = [noticeView.noticeItems objectAtIndex:index];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:item.urlString] options:@{} completionHandler:nil];
+}
+
+- (void)detailAction {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"提示" message:@"Detail Action" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *action = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
+    [alert addAction:action];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 

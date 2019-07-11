@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@class JACycleNoticeView;
+@class JACycleNoticeView,JACycleNoticeItem;
 
 @protocol JACycleNoticeViewDelegete <NSObject>
 
@@ -21,10 +21,16 @@
 
 @interface JACycleNoticeView : UIView
 
-- (instancetype)initWithFrame:(CGRect)frame noticeItems:(NSArray<NSString*>*)items delegate:(id<JACycleNoticeViewDelegete>)delegate;
+- (instancetype)initWithFrame:(CGRect)frame noticeItems:(NSArray<JACycleNoticeItem*>*)items delegate:(id<JACycleNoticeViewDelegete>)delegate;
 
+/*
+ * 数据源数组
+ */
 @property (nonatomic,strong) NSMutableArray *noticeItems;
 
+/*
+ * 代理
+ */
 @property (nonatomic,weak) id<JACycleNoticeViewDelegete> delegate;
 
 //是否开启轮播 默认NO 不开启
@@ -33,6 +39,7 @@
 @end
 
 
+/* 数据modl */
 @interface JACycleNoticeItem : NSObject
 
 @property (nonatomic,copy) NSString *title;
