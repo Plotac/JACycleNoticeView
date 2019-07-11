@@ -2,7 +2,7 @@
 ### 轮播公告视图
 
 ###### 效果图
-<div align=center><img src="https://github.com/Plotac/JACycleNoticeView/blob/master/EffectPicture/卡片列表效果图.gif" alt="卡片列表效果图"/></div>
+<div align=center><img src="https://github.com/Plotac/JACycleNoticeView/blob/master/EffectPicture/轮播公告效果图.gif" alt="卡片列表效果图"/></div>
 
 ## 使用
 1. 在你需要使用JACardView的控制器中
